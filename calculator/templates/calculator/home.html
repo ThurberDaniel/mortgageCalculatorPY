@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <h1>Mortgage Calulate</h1>
+
+<form action="/calculating">
+
+  <label for="Amount">Amount:</label>
+  <input type="number"  name="amount"><br><br>
+
+  <label for="interest">Interest:</label>
+  <input type="number" name="interest"><br><br>
+
+  <p>Term:</p>
+  <select name="term">
+    <option value="15" selected="selected">15</option>
+    <option value="30">30</option>
+  </select><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>Total Balance: {{  bal  }}</h1>
+<h1>Monthly Payment: {{  payment  }}</h1>
+</body>
+</html>
